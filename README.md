@@ -1,0 +1,2 @@
+# maintrend
+a typecho theme
