@@ -20,7 +20,7 @@
 <footer id="footer" role="contentinfo">
     <img width="100" style="margin: -83px 0 20px; background-color: #FFF; padding: 0 10px;" src="<?php $this->options->themeUrl('img/logo-icon.png'); ?>">
     <br>
-    &copy; 2016 名川资本. <a style="color:#999;" href="http://www.miibeian.gov.cn/" target="_blank">京ICP备16018170号</a>
+    &copy; <?php echo date('Y'); ?> MainTrend Capital. &nbsp; <a style="color:#999; font-weight: normal" href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 16018170 号</a>
 </footer><!-- end #footer -->
 
 <script>

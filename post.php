@@ -8,7 +8,7 @@
                 <?php $this->content(); ?>
             </div>
             <div class="article-date">
-                <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('F j, Y'); ?></time>发布
+                <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y 年 m 月 d 日'); ?></time> 发布
             </div>
         </article>
     </div><!-- end #main-->
