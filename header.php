@@ -46,8 +46,10 @@
       </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
+      <i class="material-icons menu" onclick="toggleNav();"></i>
+
       <!-- Navigation -->
-      <nav class="mdl-navigation">
+      <nav class="mdl-navigation" id="menu">
         <a class="mdl-navigation__link " href="/">投资理念</a>
         <a class="mdl-navigation__link current" href="/index.php/news.html" title="资讯观点">资讯观点</a>
         <a class="mdl-navigation__link " href="/#case" title="投资案例">投资案例</a>

@@ -2,21 +2,17 @@
 
 <div class="container" id="contact">
     <div class="row">
-        <div class="col-md-4 col-4 col-push-2 contact">
+        <div class="col-mb-12 col-4 col-push-2 contact">
             <span class="contact-icon"><i class="ion-ios-telephone"></i></span>
-            <div>
-                <span class="text-muted">联系电话</span>
-                <br>
-                <strong>010 - 5169 0300</strong>
-            </div>
+            <span class="text-muted">联系电话</span>
+            <br>
+            <strong>010 - 5169 0300</strong>
         </div>
-        <div class="col-md-4 col-4 col-push-2 contact">
+        <div class="col-mb-12 col-4 col-push-2 contact" style="margin-bottom:100px;">
             <span class="contact-icon"><i class="ion-email"></i></span>
-            <div>
-                <span class="text-muted">联系邮箱</span>
-                <br>
-                <strong>bp@maintrendcap.com</strong>
-            </div>
+            <span class="text-muted">联系邮箱</span>
+            <br>
+            <strong>bp@maintrendcap.com</strong>
         </div>
     </div>
 </div>
@@ -29,7 +25,21 @@
 
 <script>
     function scrollDown() {
-        window.scrollTo(0, window.innerHeight);
+        var timerID = setInterval(function() {
+            window.scrollBy(0, 5);
+
+            if( window.pageYOffset >= 580 )
+                clearInterval(timerID);
+        }, 6);
+    }
+    function toggleNav() {
+        var div = document.getElementById('menu');
+        if (div.style.display == 'none') {
+            div.style.display = 'block';
+        }
+        else {
+            div.style.display = 'none';
+        }
     }
 </script>
 

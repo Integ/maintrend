@@ -116,7 +116,6 @@ textarea {
 
 #header {
   padding-top: 35px;
-  border-bottom: 1px solid #EEE;
 }
 
 #logo {
@@ -557,6 +556,7 @@ img.alignright {
     font-size: 16px;
     padding: 0;
     margin: 0 15px;
+    font-weight: normal;
 }
 .mdl-layout__header-row .mdl-navigation__link.current {
     box-shadow: inset 0px -1px 0px 0px #B4E6FF;
@@ -565,6 +565,7 @@ img.alignright {
   font-style: normal;
   color: #B4E6FF;
   font-size: 18px;
+  line-height: 1.7;
 }
 h2.description {
   font-size: 48px;
@@ -578,6 +579,7 @@ h2.description {
   color: #F6402C;
 }
 .board-text {
+  line-height: 1.7;
   font-size: 16px;
   color: #666;
   margin-bottom: 50px;
@@ -616,9 +618,22 @@ h2.description {
 .contact strong {
   font-size: 18px;
 }
+.cards {
+  text-align: center;
+}
 .row .card {
+  margin-bottom: 20px;
+  margin-right: 20px;
   padding: 0;
-  margin: 0 20px 0 0;
+  background-color: #FFF;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+  border-radius: 2px;
+}
+.cards .card {
+  max-width: 166px;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
   border-radius: 2px;
   background-color: #FFF;
@@ -638,6 +653,7 @@ h2.description {
   float: left;
   background-color: #ECF9FF;
   padding: 20px;
+  margin-right: 20px;
 }
 .calendar {
   font-family: Heltivaca;
@@ -670,10 +686,15 @@ h2.description {
   color: #333;
   font-size: 16px;
   font-weight: normal;
+  width: 70%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .row .post-article {
   min-height: 600px;
-  margin-top: -490px;
+  margin-top: -500px;
   background-color: #FFF;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
   border-radius: 2px;
@@ -701,7 +722,7 @@ article.post {
 }
 .row .news-board {
   min-height: 600px;
-  margin-top: -490px;
+  margin-top: -500px;
   padding: 50px 100px;
   background-color: #FFF;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
@@ -756,4 +777,85 @@ article.post {
 }
 .mdl-layout__container {
   height: auto;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+  .mdl-layout__header {
+    display: flex;
+  }
+}
+@media screen and (max-width: 740px){
+  article.post {
+    padding: 00px;
+  }
+  .article-title {
+    display: flex;
+    margin: 0;
+  }
+  .article-title a {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  .row .post-article, .row .news-board {
+    padding: 20px;
+    margin-left: 33px;
+  }
+  .news li .news-title {
+    margin-bottom: 15px;
+    z-index: 0;
+  }
+  .news li {
+    margin-top: 40px;
+  }
+  .news-dotted, .news-date {
+    display: none;
+  }
+  .mdl-layout__header-row {
+    padding: 20px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  .mdl-navigation {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 56px;
+  }
+  .mdl-navigation .mdl-navigation__link {
+    display: block;
+    width: 100%;
+    line-height: 1.4;
+    padding: 10px 20px;
+    margin: 0;
+    background: rgba(35,76,97,0.80);
+    box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.10);
+  }
+  .mdl-navigation .mdl-navigation__link.current {
+    box-shadow: none;
+  }
+  h2.description {
+    font-size: 32px;
+    margin-top: 30px !important;
+  }
+  .row .contact {
+    margin: 40px 0 0 0;
+    padding-left: 20px;
+  }
+  .post-title a {
+    width: 50%;
+  }
+  .cards .card {
+    margin: 0 5px 10px !important;
+  }
+  .news.card {
+    margin: 0 35px 15px;
+  }
+  .menu {
+    display: inline-block;
+  }
 }
