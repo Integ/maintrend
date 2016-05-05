@@ -12,9 +12,9 @@
 body {
   background-color: #FFF;
   color: #444;
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "PingFang SC", "Droid Serif", Georgia, "Times New Roman", STHeiti, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", STHeiti, sans-serif;
   font-size: 87.5%;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -47,6 +47,11 @@ blockquote {
   color: #666;
 }
 
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
 table {
   border: 1px solid #ddd;
   width: 100%;
@@ -61,7 +66,7 @@ table th {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", STHeiti, sans-serif;
 }
 
 input[type="text"],
@@ -398,6 +403,7 @@ textarea {
 }
 .post-content h2, .comment-content h2 {
   font-size: 1.28571em;
+  font-weight: bold;
 }
 .post-content img, .comment-content img,
 .post-content video, .comment-content video {
@@ -511,30 +517,6 @@ img.alignright {
   visibility: hidden; }
 
 
-/* fallback */
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(./fonts/material_icon.woff2) format('woff2');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-}
-
 
 /* Add By Integ */
 .banner {
@@ -628,6 +610,7 @@ h2.description {
   background-color: #FFF;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
   border-radius: 2px;
+  overflow: hidden;
 }
 .cards .card {
   max-width: 166px;
@@ -639,7 +622,8 @@ h2.description {
   background-color: #FFF;
 }
 .card h5 {
-  margin: 10px 0 3px;
+  margin: 16px 0 5px;
+  font-size: 16px;
 }
 .card .text-muted {
   color: #999;
@@ -656,7 +640,6 @@ h2.description {
   margin-right: 20px;
 }
 .calendar {
-  font-family: Heltivaca;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -676,7 +659,7 @@ h2.description {
 .calendar .day {
   color: #557382;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 16px;
 }
 .post-title {
   margin: 15px 0 5px;
@@ -700,13 +683,12 @@ h2.description {
   border-radius: 2px;
 }
 .article-title {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #DDD;
+  font-size: 36px;
+  line-height: 1.2;
 }
 .article-title a {
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: normal;
   color: #F6402C;
 }
 article.post {
@@ -730,6 +712,7 @@ article.post {
 }
 .row .news-board-title {
   margin-top: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 50px;
   font-weight: normal;
@@ -769,6 +752,9 @@ article.post {
   position: absolute;
   right: 0;
 }
+.news time {
+  color: #999;
+}
 .logos {
   margin-bottom: 50px;
 }
@@ -781,6 +767,9 @@ article.post {
 .menu {
   display: none;
   cursor: pointer;
+}
+.mdl-layout__header {
+  margin-top: 5px;
 }
 @media screen and (max-width: 1024px){
   .mdl-layout__header {
@@ -832,7 +821,7 @@ article.post {
     line-height: 1.4;
     padding: 10px 20px;
     margin: 0;
-    background: rgba(35,76,97,0.80);
+    background: rgba(35,76,97,0.95);
     box-shadow: 0px -1px 0px 0px rgba(255,255,255,0.10);
   }
   .mdl-navigation .mdl-navigation__link.current {

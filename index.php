@@ -59,7 +59,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
       </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      <i class="material-icons menu" onclick="toggleNav();"></i>
+      <i class="ion-navicon menu" style="font-size:28px;" onclick="toggleNav();"></i>
       <!-- Navigation -->
       <nav class="mdl-navigation" id="menu">
         <a class="mdl-navigation__link current" href="/">投资理念</a>
@@ -75,7 +75,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--2-col"></div>
             <div class="mdl-cell mdl-cell--8-col">            
-            <h2 class="description text-center" style="margin-top: 60px; margin-bottom: 30px;"><?php $this->options->description() ?></h2>
+            <h2 class="description text-center" style="margin-top: 100px; margin-bottom: 30px;">极致追求 &nbsp; 用心成就</h2>
             <p class="description text-center">
             对卓越品质和极致体验的追求往往能创造出独具影响的产品、对极致追求的过程甚于结果。<br>
             情怀、梦想、勇敢、正义、公益、大爱的极致之人生；专业、勤奋、谦卑、敬畏，以我们的创业之心真诚的对待创业者，理解、尊重、陪伴、分享，互相成就彼此。
@@ -86,7 +86,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
     </div>
   </main>
   <button id="scrollDown" onClick="scrollDown();" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="margin: 0 auto 70px; background-color:#F6402C;">
-      <i class="material-icons">keyboard_arrow_down</i>
+      <i class="ion-chevron-down"></i>
   </button>
 </div>
 
@@ -95,7 +95,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
         <div class="row">
             <div class="col-xs-12 col-10 col-push-1">
                 <h4 class="text-center board-title">关于我们</h4>
-                <p class="text-center board-text">名川资本， 由赛富投资基金合伙人王求乐于2016年5月创立，主要专注于Pre-A及A轮阶段的TMT投资，团队成员均来自于业内一线基金，拥有丰富的投资经验和专业知识。秉承赛富基金专业、严谨、卓越的态度， 名川资本以“ 极致追求、用心成就 ”为创业理念！ 我们在用心成就创业者、成就我们自己的同时，也通过丰厚收益回报我们的LP及合作伙伴。</P>
+                <p class="text-center board-text">名川资本， 由赛富投资基金合伙人王求乐于 2016 年 5 月创立，主要专注于 Pre-A 及 A 轮阶段的 TMT 投资，团队成员均来自于业内一线基金，拥有丰富的投资经验和专业知识。秉承赛富基金专业、严谨、卓越的态度， 名川资本以“ 极致追求、用心成就 ”为创业理念！ 我们在用心成就创业者、成就我们自己的同时，也通过丰厚收益回报我们的 LP 及合作伙伴。</P>
             </div>
         </div><!-- end .row -->
     </div>

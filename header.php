@@ -46,8 +46,7 @@
       </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      <i class="material-icons menu" onclick="toggleNav();"></i>
-
+      <i class="ion-navicon menu" style="font-size:28px;" onclick="toggleNav();"></i>
       <!-- Navigation -->
       <nav class="mdl-navigation" id="menu">
         <a class="mdl-navigation__link " href="/">投资理念</a>
